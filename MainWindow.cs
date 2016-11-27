@@ -25,12 +25,33 @@ namespace ARLES
 
 		protected void upload (object sender, EventArgs e)
 		{
-			Log.Debug ("Uploading");
+			Log.Debug ("# Compiling");
 			Parser parser = new Parser (ExpressionEntry.Text);
 			byte[] code = parser.Compile ();
 
-			for (int i = 0; i < code.Length; ++i)
-				Log.Debug (code [i].ToString());
+			if (!string.IsNullOrEmpty(PortsComboBox.ActiveText)) {
+				Serial.write (PortsComboBox.ActiveText, code);
+			} else {
+				MessageDialog md = new MessageDialog (null, DialogFlags.Modal, MessageType.Error, ButtonsType.Close, "Error: You have to specify Arduino port");
+				md.Run ();
+				md.Destroy ();
+			}
+		}
+
+		protected void rescan (object sender, EventArgs e)
+		{
+			/* Really? */
+			PortsComboBox.Clear ();
+			CellRendererText cell = new CellRendererText();
+			PortsComboBox.PackStart(cell, false);
+			PortsComboBox.AddAttribute(cell, "text", 0);
+			PortsComboBox.Model = new ListStore (typeof(string));
+
+			string[] ports = Serial.GetPorts ();
+
+			foreach (string port in ports) {
+				PortsComboBox.AppendText (port);
+			}
 		}
 	}
 

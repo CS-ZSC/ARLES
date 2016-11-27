@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/ARLES.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="ARLES.MainWindow" design-size="756 573">
+  <widget class="Gtk.Window" id="ARLES.MainWindow" design-size="627 608">
     <action-group name="Default">
       <action id="newAction">
         <property name="Type">Toggle</property>
@@ -65,6 +65,22 @@
                 <property name="AutoSize">False</property>
               </packing>
             </child>
+            <child>
+              <widget class="Gtk.Button" id="button1">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Rescan</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="rescan" />
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
           </widget>
           <packing>
             <property name="Position">1</property>
@@ -81,7 +97,7 @@
               <widget class="Gtk.Notebook" id="notebook1">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
-                <property name="CurrentPage">1</property>
+                <property name="CurrentPage">0</property>
                 <child>
                   <widget class="Gtk.VBox" id="vbox5">
                     <property name="MemberName" />
@@ -133,6 +149,7 @@
                             <property name="Type">TextOnly</property>
                             <property name="Label" translatable="yes">Upload</property>
                             <property name="UseUnderline">True</property>
+                            <signal name="Clicked" handler="upload" />
                           </widget>
                           <packing>
                             <property name="Position">0</property>

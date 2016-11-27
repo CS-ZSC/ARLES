@@ -18,6 +18,8 @@ namespace ARLES
 		
 		private global::Gtk.ComboBox PortsComboBox;
 		
+		private global::Gtk.Button button1;
+		
 		private global::Gtk.VBox vbox2;
 		
 		private global::Gtk.Notebook notebook1;
@@ -45,6 +47,86 @@ namespace ARLES
 		private global::Gtk.Label label6;
 		
 		private global::Gtk.Label label1;
+		
+		private global::Gtk.VBox vbox3;
+		
+		private global::Gtk.HBox hbox2;
+		
+		private global::Gtk.Label label7;
+		
+		private global::Gtk.ComboBoxEntry PinCombo;
+		
+		private global::Gtk.HBox hbox5;
+		
+		private global::Gtk.Label label8;
+		
+		private global::Gtk.ComboBoxEntry PinCombo1;
+		
+		private global::Gtk.HBox hbox6;
+		
+		private global::Gtk.Label label9;
+		
+		private global::Gtk.ComboBoxEntry PinCombo2;
+		
+		private global::Gtk.HBox hbox7;
+		
+		private global::Gtk.Label label10;
+		
+		private global::Gtk.ComboBoxEntry PinCombo3;
+		
+		private global::Gtk.HBox hbox8;
+		
+		private global::Gtk.Label label11;
+		
+		private global::Gtk.ComboBoxEntry PinCombo4;
+		
+		private global::Gtk.HBox hbox9;
+		
+		private global::Gtk.Label label12;
+		
+		private global::Gtk.ComboBoxEntry PinCombo5;
+		
+		private global::Gtk.HBox hbox10;
+		
+		private global::Gtk.Label label13;
+		
+		private global::Gtk.ComboBoxEntry PinCombo6;
+		
+		private global::Gtk.HBox hbox11;
+		
+		private global::Gtk.Label label14;
+		
+		private global::Gtk.ComboBoxEntry PinCombo7;
+		
+		private global::Gtk.HBox hbox12;
+		
+		private global::Gtk.Label label15;
+		
+		private global::Gtk.ComboBoxEntry PinCombo8;
+		
+		private global::Gtk.HBox hbox13;
+		
+		private global::Gtk.Label label16;
+		
+		private global::Gtk.ComboBoxEntry PinCombo9;
+		
+		private global::Gtk.HBox hbox14;
+		
+		private global::Gtk.Label label17;
+		
+		private global::Gtk.ComboBoxEntry PinCombo10;
+		
+		private global::Gtk.HBox hbox15;
+		
+		private global::Gtk.Label label18;
+		
+		private global::Gtk.ComboBoxEntry PinCombo11;
+		
+		private global::Gtk.HBox hbox16;
+		
+		private global::Gtk.Label label19;
+		
+		private global::Gtk.ComboBoxEntry PinCombo12;
 		
 		private global::Gtk.Label label2;
 		
@@ -99,11 +181,22 @@ namespace ARLES
 			this.hbox1.Add (this.PortsComboBox);
 			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.PortsComboBox]));
 			w4.Position = 1;
-			this.vbox1.Add (this.hbox1);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-			w5.Position = 1;
+			// Container child hbox1.Gtk.Box+BoxChild
+			this.button1 = new global::Gtk.Button ();
+			this.button1.CanFocus = true;
+			this.button1.Name = "button1";
+			this.button1.UseUnderline = true;
+			this.button1.Label = global::Mono.Unix.Catalog.GetString ("Rescan");
+			this.hbox1.Add (this.button1);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.button1]));
+			w5.Position = 2;
 			w5.Expand = false;
 			w5.Fill = false;
+			this.vbox1.Add (this.hbox1);
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+			w6.Position = 1;
+			w6.Expand = false;
+			w6.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.vbox2 = new global::Gtk.VBox ();
 			this.vbox2.Name = "vbox2";
@@ -126,10 +219,10 @@ namespace ARLES
 			this.label5.Name = "label5";
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Expression");
 			this.hbox4.Add (this.label5);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label5]));
-			w6.Position = 0;
-			w6.Expand = false;
-			w6.Fill = false;
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label5]));
+			w7.Position = 0;
+			w7.Expand = false;
+			w7.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
 			this.ExpressionEntry = new global::Gtk.Entry ();
 			this.ExpressionEntry.CanFocus = true;
@@ -137,13 +230,13 @@ namespace ARLES
 			this.ExpressionEntry.IsEditable = true;
 			this.ExpressionEntry.InvisibleChar = '●';
 			this.hbox4.Add (this.ExpressionEntry);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.ExpressionEntry]));
-			w7.Position = 1;
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.ExpressionEntry]));
+			w8.Position = 1;
 			this.vbox5.Add (this.hbox4);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox4]));
-			w8.Position = 0;
-			w8.Expand = false;
-			w8.Fill = false;
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox4]));
+			w9.Position = 0;
+			w9.Expand = false;
+			w9.Fill = false;
 			// Container child vbox5.Gtk.Box+BoxChild
 			this.hbox3 = new global::Gtk.HBox ();
 			this.hbox3.Name = "hbox3";
@@ -155,10 +248,10 @@ namespace ARLES
 			this.button3.UseUnderline = true;
 			this.button3.Label = global::Mono.Unix.Catalog.GetString ("Upload");
 			this.hbox3.Add (this.button3);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.button3]));
-			w9.Position = 0;
-			w9.Expand = false;
-			w9.Fill = false;
+			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.button3]));
+			w10.Position = 0;
+			w10.Expand = false;
+			w10.Fill = false;
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.button4 = new global::Gtk.Button ();
 			this.button4.CanFocus = true;
@@ -166,15 +259,15 @@ namespace ARLES
 			this.button4.UseUnderline = true;
 			this.button4.Label = global::Mono.Unix.Catalog.GetString ("Save");
 			this.hbox3.Add (this.button4);
-			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.button4]));
-			w10.Position = 1;
-			w10.Expand = false;
-			w10.Fill = false;
-			this.vbox5.Add (this.hbox3);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox3]));
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.button4]));
 			w11.Position = 1;
 			w11.Expand = false;
 			w11.Fill = false;
+			this.vbox5.Add (this.hbox3);
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.hbox3]));
+			w12.Position = 1;
+			w12.Expand = false;
+			w12.Fill = false;
 			// Container child vbox5.Gtk.Box+BoxChild
 			this.notebook2 = new global::Gtk.Notebook ();
 			this.notebook2.CanFocus = true;
@@ -198,8 +291,8 @@ namespace ARLES
 			this.notebook2.SetTabLabel (this.GtkScrolledWindow, this.label6);
 			this.label6.ShowAll ();
 			this.vbox5.Add (this.notebook2);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.notebook2]));
-			w14.Position = 2;
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox5 [this.notebook2]));
+			w15.Position = 2;
 			this.notebook1.Add (this.vbox5);
 			// Notebook tab
 			this.label1 = new global::Gtk.Label ();
@@ -207,30 +300,385 @@ namespace ARLES
 			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Upload");
 			this.notebook1.SetTabLabel (this.vbox5, this.label1);
 			this.label1.ShowAll ();
+			// Container child notebook1.Gtk.Notebook+NotebookChild
+			this.vbox3 = new global::Gtk.VBox ();
+			this.vbox3.Name = "vbox3";
+			this.vbox3.Spacing = 6;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox2 = new global::Gtk.HBox ();
+			this.hbox2.Name = "hbox2";
+			this.hbox2.Spacing = 6;
+			// Container child hbox2.Gtk.Box+BoxChild
+			this.label7 = new global::Gtk.Label ();
+			this.label7.WidthRequest = 200;
+			this.label7.Name = "label7";
+			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 0");
+			this.hbox2.Add (this.label7);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.label7]));
+			w17.Position = 0;
+			w17.Expand = false;
+			w17.Fill = false;
+			// Container child hbox2.Gtk.Box+BoxChild
+			this.PinCombo = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo.Name = "PinCombo";
+			this.hbox2.Add (this.PinCombo);
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.PinCombo]));
+			w18.Position = 1;
+			w18.Expand = false;
+			w18.Fill = false;
+			this.vbox3.Add (this.hbox2);
+			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox2]));
+			w19.Position = 0;
+			w19.Expand = false;
+			w19.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox5 = new global::Gtk.HBox ();
+			this.hbox5.Name = "hbox5";
+			this.hbox5.Spacing = 6;
+			// Container child hbox5.Gtk.Box+BoxChild
+			this.label8 = new global::Gtk.Label ();
+			this.label8.WidthRequest = 200;
+			this.label8.Name = "label8";
+			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 1");
+			this.hbox5.Add (this.label8);
+			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox5 [this.label8]));
+			w20.Position = 0;
+			w20.Expand = false;
+			w20.Fill = false;
+			// Container child hbox5.Gtk.Box+BoxChild
+			this.PinCombo1 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo1.Name = "PinCombo1";
+			this.hbox5.Add (this.PinCombo1);
+			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox5 [this.PinCombo1]));
+			w21.Position = 1;
+			w21.Expand = false;
+			w21.Fill = false;
+			this.vbox3.Add (this.hbox5);
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox5]));
+			w22.Position = 1;
+			w22.Expand = false;
+			w22.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox6 = new global::Gtk.HBox ();
+			this.hbox6.Name = "hbox6";
+			this.hbox6.Spacing = 6;
+			// Container child hbox6.Gtk.Box+BoxChild
+			this.label9 = new global::Gtk.Label ();
+			this.label9.WidthRequest = 200;
+			this.label9.Name = "label9";
+			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 2");
+			this.hbox6.Add (this.label9);
+			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.label9]));
+			w23.Position = 0;
+			w23.Expand = false;
+			w23.Fill = false;
+			// Container child hbox6.Gtk.Box+BoxChild
+			this.PinCombo2 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo2.Name = "PinCombo2";
+			this.hbox6.Add (this.PinCombo2);
+			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.PinCombo2]));
+			w24.Position = 1;
+			w24.Expand = false;
+			w24.Fill = false;
+			this.vbox3.Add (this.hbox6);
+			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox6]));
+			w25.Position = 2;
+			w25.Expand = false;
+			w25.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox7 = new global::Gtk.HBox ();
+			this.hbox7.Name = "hbox7";
+			this.hbox7.Spacing = 6;
+			// Container child hbox7.Gtk.Box+BoxChild
+			this.label10 = new global::Gtk.Label ();
+			this.label10.WidthRequest = 200;
+			this.label10.Name = "label10";
+			this.label10.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 3");
+			this.hbox7.Add (this.label10);
+			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.label10]));
+			w26.Position = 0;
+			w26.Expand = false;
+			w26.Fill = false;
+			// Container child hbox7.Gtk.Box+BoxChild
+			this.PinCombo3 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo3.Name = "PinCombo3";
+			this.hbox7.Add (this.PinCombo3);
+			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.PinCombo3]));
+			w27.Position = 1;
+			w27.Expand = false;
+			w27.Fill = false;
+			this.vbox3.Add (this.hbox7);
+			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox7]));
+			w28.Position = 3;
+			w28.Expand = false;
+			w28.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox8 = new global::Gtk.HBox ();
+			this.hbox8.Name = "hbox8";
+			this.hbox8.Spacing = 6;
+			// Container child hbox8.Gtk.Box+BoxChild
+			this.label11 = new global::Gtk.Label ();
+			this.label11.WidthRequest = 200;
+			this.label11.Name = "label11";
+			this.label11.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 4");
+			this.hbox8.Add (this.label11);
+			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.label11]));
+			w29.Position = 0;
+			w29.Expand = false;
+			w29.Fill = false;
+			// Container child hbox8.Gtk.Box+BoxChild
+			this.PinCombo4 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo4.Name = "PinCombo4";
+			this.hbox8.Add (this.PinCombo4);
+			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.PinCombo4]));
+			w30.Position = 1;
+			w30.Expand = false;
+			w30.Fill = false;
+			this.vbox3.Add (this.hbox8);
+			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox8]));
+			w31.Position = 4;
+			w31.Expand = false;
+			w31.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox9 = new global::Gtk.HBox ();
+			this.hbox9.Name = "hbox9";
+			this.hbox9.Spacing = 6;
+			// Container child hbox9.Gtk.Box+BoxChild
+			this.label12 = new global::Gtk.Label ();
+			this.label12.WidthRequest = 200;
+			this.label12.Name = "label12";
+			this.label12.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 5");
+			this.hbox9.Add (this.label12);
+			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.hbox9 [this.label12]));
+			w32.Position = 0;
+			w32.Expand = false;
+			w32.Fill = false;
+			// Container child hbox9.Gtk.Box+BoxChild
+			this.PinCombo5 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo5.Name = "PinCombo5";
+			this.hbox9.Add (this.PinCombo5);
+			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.hbox9 [this.PinCombo5]));
+			w33.Position = 1;
+			w33.Expand = false;
+			w33.Fill = false;
+			this.vbox3.Add (this.hbox9);
+			global::Gtk.Box.BoxChild w34 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox9]));
+			w34.Position = 5;
+			w34.Expand = false;
+			w34.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox10 = new global::Gtk.HBox ();
+			this.hbox10.Name = "hbox10";
+			this.hbox10.Spacing = 6;
+			// Container child hbox10.Gtk.Box+BoxChild
+			this.label13 = new global::Gtk.Label ();
+			this.label13.WidthRequest = 200;
+			this.label13.Name = "label13";
+			this.label13.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 6");
+			this.hbox10.Add (this.label13);
+			global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.hbox10 [this.label13]));
+			w35.Position = 0;
+			w35.Expand = false;
+			w35.Fill = false;
+			// Container child hbox10.Gtk.Box+BoxChild
+			this.PinCombo6 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo6.Name = "PinCombo6";
+			this.hbox10.Add (this.PinCombo6);
+			global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.hbox10 [this.PinCombo6]));
+			w36.Position = 1;
+			w36.Expand = false;
+			w36.Fill = false;
+			this.vbox3.Add (this.hbox10);
+			global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox10]));
+			w37.Position = 6;
+			w37.Expand = false;
+			w37.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox11 = new global::Gtk.HBox ();
+			this.hbox11.Name = "hbox11";
+			this.hbox11.Spacing = 6;
+			// Container child hbox11.Gtk.Box+BoxChild
+			this.label14 = new global::Gtk.Label ();
+			this.label14.WidthRequest = 200;
+			this.label14.Name = "label14";
+			this.label14.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 7");
+			this.hbox11.Add (this.label14);
+			global::Gtk.Box.BoxChild w38 = ((global::Gtk.Box.BoxChild)(this.hbox11 [this.label14]));
+			w38.Position = 0;
+			w38.Expand = false;
+			w38.Fill = false;
+			// Container child hbox11.Gtk.Box+BoxChild
+			this.PinCombo7 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo7.Name = "PinCombo7";
+			this.hbox11.Add (this.PinCombo7);
+			global::Gtk.Box.BoxChild w39 = ((global::Gtk.Box.BoxChild)(this.hbox11 [this.PinCombo7]));
+			w39.Position = 1;
+			w39.Expand = false;
+			w39.Fill = false;
+			this.vbox3.Add (this.hbox11);
+			global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox11]));
+			w40.Position = 7;
+			w40.Expand = false;
+			w40.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox12 = new global::Gtk.HBox ();
+			this.hbox12.Name = "hbox12";
+			this.hbox12.Spacing = 6;
+			// Container child hbox12.Gtk.Box+BoxChild
+			this.label15 = new global::Gtk.Label ();
+			this.label15.WidthRequest = 200;
+			this.label15.Name = "label15";
+			this.label15.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 8");
+			this.hbox12.Add (this.label15);
+			global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(this.hbox12 [this.label15]));
+			w41.Position = 0;
+			w41.Expand = false;
+			w41.Fill = false;
+			// Container child hbox12.Gtk.Box+BoxChild
+			this.PinCombo8 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo8.Name = "PinCombo8";
+			this.hbox12.Add (this.PinCombo8);
+			global::Gtk.Box.BoxChild w42 = ((global::Gtk.Box.BoxChild)(this.hbox12 [this.PinCombo8]));
+			w42.Position = 1;
+			w42.Expand = false;
+			w42.Fill = false;
+			this.vbox3.Add (this.hbox12);
+			global::Gtk.Box.BoxChild w43 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox12]));
+			w43.Position = 8;
+			w43.Expand = false;
+			w43.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox13 = new global::Gtk.HBox ();
+			this.hbox13.Name = "hbox13";
+			this.hbox13.Spacing = 6;
+			// Container child hbox13.Gtk.Box+BoxChild
+			this.label16 = new global::Gtk.Label ();
+			this.label16.WidthRequest = 200;
+			this.label16.Name = "label16";
+			this.label16.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 9");
+			this.hbox13.Add (this.label16);
+			global::Gtk.Box.BoxChild w44 = ((global::Gtk.Box.BoxChild)(this.hbox13 [this.label16]));
+			w44.Position = 0;
+			w44.Expand = false;
+			w44.Fill = false;
+			// Container child hbox13.Gtk.Box+BoxChild
+			this.PinCombo9 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo9.Name = "PinCombo9";
+			this.hbox13.Add (this.PinCombo9);
+			global::Gtk.Box.BoxChild w45 = ((global::Gtk.Box.BoxChild)(this.hbox13 [this.PinCombo9]));
+			w45.Position = 1;
+			w45.Expand = false;
+			w45.Fill = false;
+			this.vbox3.Add (this.hbox13);
+			global::Gtk.Box.BoxChild w46 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox13]));
+			w46.Position = 9;
+			w46.Expand = false;
+			w46.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox14 = new global::Gtk.HBox ();
+			this.hbox14.Name = "hbox14";
+			this.hbox14.Spacing = 6;
+			// Container child hbox14.Gtk.Box+BoxChild
+			this.label17 = new global::Gtk.Label ();
+			this.label17.WidthRequest = 200;
+			this.label17.Name = "label17";
+			this.label17.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 10");
+			this.hbox14.Add (this.label17);
+			global::Gtk.Box.BoxChild w47 = ((global::Gtk.Box.BoxChild)(this.hbox14 [this.label17]));
+			w47.Position = 0;
+			w47.Expand = false;
+			w47.Fill = false;
+			// Container child hbox14.Gtk.Box+BoxChild
+			this.PinCombo10 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo10.Name = "PinCombo10";
+			this.hbox14.Add (this.PinCombo10);
+			global::Gtk.Box.BoxChild w48 = ((global::Gtk.Box.BoxChild)(this.hbox14 [this.PinCombo10]));
+			w48.Position = 1;
+			w48.Expand = false;
+			w48.Fill = false;
+			this.vbox3.Add (this.hbox14);
+			global::Gtk.Box.BoxChild w49 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox14]));
+			w49.Position = 10;
+			w49.Expand = false;
+			w49.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox15 = new global::Gtk.HBox ();
+			this.hbox15.Name = "hbox15";
+			this.hbox15.Spacing = 6;
+			// Container child hbox15.Gtk.Box+BoxChild
+			this.label18 = new global::Gtk.Label ();
+			this.label18.WidthRequest = 200;
+			this.label18.Name = "label18";
+			this.label18.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 11");
+			this.hbox15.Add (this.label18);
+			global::Gtk.Box.BoxChild w50 = ((global::Gtk.Box.BoxChild)(this.hbox15 [this.label18]));
+			w50.Position = 0;
+			w50.Expand = false;
+			w50.Fill = false;
+			// Container child hbox15.Gtk.Box+BoxChild
+			this.PinCombo11 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo11.Name = "PinCombo11";
+			this.hbox15.Add (this.PinCombo11);
+			global::Gtk.Box.BoxChild w51 = ((global::Gtk.Box.BoxChild)(this.hbox15 [this.PinCombo11]));
+			w51.Position = 1;
+			w51.Expand = false;
+			w51.Fill = false;
+			this.vbox3.Add (this.hbox15);
+			global::Gtk.Box.BoxChild w52 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox15]));
+			w52.Position = 11;
+			w52.Expand = false;
+			w52.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.hbox16 = new global::Gtk.HBox ();
+			this.hbox16.Name = "hbox16";
+			this.hbox16.Spacing = 6;
+			// Container child hbox16.Gtk.Box+BoxChild
+			this.label19 = new global::Gtk.Label ();
+			this.label19.WidthRequest = 200;
+			this.label19.Name = "label19";
+			this.label19.LabelProp = global::Mono.Unix.Catalog.GetString ("Pin 12");
+			this.hbox16.Add (this.label19);
+			global::Gtk.Box.BoxChild w53 = ((global::Gtk.Box.BoxChild)(this.hbox16 [this.label19]));
+			w53.Position = 0;
+			w53.Expand = false;
+			w53.Fill = false;
+			// Container child hbox16.Gtk.Box+BoxChild
+			this.PinCombo12 = global::Gtk.ComboBoxEntry.NewText ();
+			this.PinCombo12.Name = "PinCombo12";
+			this.hbox16.Add (this.PinCombo12);
+			global::Gtk.Box.BoxChild w54 = ((global::Gtk.Box.BoxChild)(this.hbox16 [this.PinCombo12]));
+			w54.Position = 1;
+			w54.Expand = false;
+			w54.Fill = false;
+			this.vbox3.Add (this.hbox16);
+			global::Gtk.Box.BoxChild w55 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox16]));
+			w55.Position = 12;
+			w55.Expand = false;
+			w55.Fill = false;
+			this.notebook1.Add (this.vbox3);
+			global::Gtk.Notebook.NotebookChild w56 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.vbox3]));
+			w56.Position = 1;
 			// Notebook tab
-			global::Gtk.Label w16 = new global::Gtk.Label ();
-			w16.Visible = true;
-			this.notebook1.Add (w16);
 			this.label2 = new global::Gtk.Label ();
 			this.label2.Name = "label2";
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Mapping");
-			this.notebook1.SetTabLabel (w16, this.label2);
+			this.notebook1.SetTabLabel (this.vbox3, this.label2);
 			this.label2.ShowAll ();
 			// Notebook tab
-			global::Gtk.Label w17 = new global::Gtk.Label ();
-			w17.Visible = true;
-			this.notebook1.Add (w17);
+			global::Gtk.Label w57 = new global::Gtk.Label ();
+			w57.Visible = true;
+			this.notebook1.Add (w57);
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
 			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Advanced");
-			this.notebook1.SetTabLabel (w17, this.label3);
+			this.notebook1.SetTabLabel (w57, this.label3);
 			this.label3.ShowAll ();
 			this.vbox2.Add (this.notebook1);
-			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.notebook1]));
-			w18.Position = 0;
+			global::Gtk.Box.BoxChild w58 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.notebook1]));
+			w58.Position = 0;
 			this.vbox1.Add (this.vbox2);
-			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.vbox2]));
-			w19.Position = 2;
+			global::Gtk.Box.BoxChild w59 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.vbox2]));
+			w59.Position = 2;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.statusbar1 = new global::Gtk.Statusbar ();
 			this.statusbar1.Name = "statusbar1";
@@ -239,21 +687,23 @@ namespace ARLES
 			this.progressbar1 = new global::Gtk.ProgressBar ();
 			this.progressbar1.Name = "progressbar1";
 			this.statusbar1.Add (this.progressbar1);
-			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.statusbar1 [this.progressbar1]));
-			w20.Position = 2;
+			global::Gtk.Box.BoxChild w60 = ((global::Gtk.Box.BoxChild)(this.statusbar1 [this.progressbar1]));
+			w60.Position = 2;
 			this.vbox1.Add (this.statusbar1);
-			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.statusbar1]));
-			w21.Position = 3;
-			w21.Expand = false;
-			w21.Fill = false;
+			global::Gtk.Box.BoxChild w61 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.statusbar1]));
+			w61.Position = 3;
+			w61.Expand = false;
+			w61.Fill = false;
 			this.Add (this.vbox1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 756;
-			this.DefaultHeight = 458;
+			this.DefaultWidth = 627;
+			this.DefaultHeight = 608;
 			this.Show ();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+			this.button1.Clicked += new global::System.EventHandler (this.rescan);
+			this.button3.Clicked += new global::System.EventHandler (this.upload);
 		}
 	}
 }
