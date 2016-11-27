@@ -28,16 +28,26 @@ namespace ARLES
 
 		public byte[] Compile()
 		{
-			Stack program = new Stack ();
-			Input (program);
-			program.Push (OpCode.HALT);
+			Queue program = new Queue ();
+			Queue log = new Queue ();
+			Input (program, log);
+			program.Enqueue (OpCode.HALT);
+			log.Enqueue ("HALT");
 
-			byte[] prog = new byte[program.Count];
+			Log.Debug ("# Compiler Output:");
 
-			for (int i = program.Count - 1; i >= 0; --i)
-				prog [i] = (byte) program.Pop ();
+			foreach (string s in log) {
+				Log.Debug ("\t" + s);
+			}
 
-			return prog;
+			byte[] code = new byte[program.Count];
+
+			int i = 0;
+			foreach (byte b in program) {
+				code [i++] = b;
+			}
+
+			return code;
 		}
 
 		private byte IDX(byte c)
@@ -55,41 +65,44 @@ namespace ARLES
 		}
 
 		/* Grammar Procedures */
-		private void Input(Stack program)
+		private void Input(Queue program, Queue log)
 		{
-			Expression (program);
+			Expression (program, log);
 		}
 
-		private void Expression(Stack program)
+		private void Expression(Queue program, Queue log)
 		{
-			Term (program);
+			Term (program, log);
 
 			if (curToken.type == TokenType.OR) {
 				Eat ();
-				Expression (program);
-				program.Push (OpCode.OR);
+				Expression (program, log);
+				program.Enqueue (OpCode.OR);
+				log.Enqueue ("OR");
 			}
 		}
 
-		private void Term(Stack program)
+		private void Term(Queue program, Queue log)
 		{
-			Factor (program);
+			Factor (program, log);
 			if (curToken.type == TokenType.VAR || curToken.type == TokenType.LP) {
-				Term (program);
-				program.Push (OpCode.AND);
+				Term (program, log);
+				program.Enqueue (OpCode.AND);
+				log.Enqueue ("AND");
 			}
 		}
 
-		private void Factor(Stack program)
+		private void Factor(Queue program, Queue log)
 		{
 			if (curToken.type == TokenType.VAR) {
-				program.Push (OpCode.PUSH);
-				program.Push (IDX (Encoding.ASCII.GetBytes (curToken.text) [0]));
+				program.Enqueue (OpCode.PUSH);
+				program.Enqueue (IDX (Encoding.ASCII.GetBytes (curToken.text) [0]));
+				log.Enqueue (string.Format ("PUSH {0}", curToken.text));
 
 				Eat ();
 			} else if (curToken.type == TokenType.LP) {
 				Eat ();
-				Expression (program);
+				Expression (program, log);
 				if (curToken.type == TokenType.RP) {
 					Eat ();
 				} else {
@@ -100,7 +113,8 @@ namespace ARLES
 			}
 
 			if (curToken.type == TokenType.COMPL) {
-				program.Push (OpCode.NOT);
+				program.Enqueue (OpCode.NOT);
+				log.Enqueue ("NOT");
 				Eat ();
 			}
 		}
