@@ -29,18 +29,22 @@ namespace ARLES
 				serial.Write(len, 0, 2);
 				serial.Write(program, 0, program.Length);
 
+				Log.Debug("# Response from Arduino");
+				Log.Debug(serial.ReadLine());
+
 				bool valid = true;
+
+				string response = "";
 
 				for (int i = 0; i < program.Length; ++i) {
 					byte b = (byte) serial.ReadByte();
-
+					response += string.Format("0x{0:X2} ", b);
 					if (b != program[i])
 						valid = false;
 				}
 
-				if (!valid) {
-					/* TODO */
-				}
+				Log.Debug (response);
+				Log.Debug (valid? "# Upload was successful" : "# Upload was unsuccessful");
 			} catch {
 				/* TODO */
 			}
