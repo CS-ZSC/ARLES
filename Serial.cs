@@ -49,37 +49,40 @@ namespace ARLES
 				/* TODO */
 			}
 		}
-		private static bool DetectArduino()
+
+		private static bool DetectArduino(string port)
 		{
 			try {
+				SerialPort serial = new SerialPort(port, 9600);
 				byte[] buffer = new byte[5];
-				int count;
-				int intReturnASCII = 0;
-				char charReturnValue = (Char)intReturnASCII;
+
+				/* Hand-shake sequence */
+				buffer[0] = Convert.ToByte(16);
+				buffer[1] = Convert.ToByte(128);
+				buffer[2] = Convert.ToByte(0);
+				buffer[3] = Convert.ToByte(0);
+				buffer[4] = Convert.ToByte(4);
+
 				serial.Open();
 				serial.Write(buffer, 0, 5);
 				Thread.Sleep(2000);
-				count = serial.BytesToRead;
+
+				int intReturnASCII = 0;
+				int count = serial.BytesToRead;
 				string returnMessage = "";
-				while (count > 0)
-				{
+				while (count > 0) {
 					intReturnASCII = serial.ReadByte();
 					returnMessage = returnMessage + Convert.ToChar(intReturnASCII);
 					count--;
 				}
-				SerialPort.name = returnMessage;
+					
 				serial.Close();
-				if (returnMessage.Contains("HELLO FROM ARDUINO"))
-				{
+				if (returnMessage.Contains("HELLO FROM ARDUINO")) {
 					return true;
-				}
-				else
-				{
+				} else {
 					return false;
 				}
-			}
-	
-			catch {
+			} catch {
 				return false;
 			}
 		}
